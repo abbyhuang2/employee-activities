@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="公司員工活動、最新公告與福利資訊入口">
+<title>員工活動資訊站</title>
+<style>
+:root{--green:#315c50;--green2:#e8f0eb;--cream:#f7f4ed;--ink:#26332e;--muted:#68766f;--line:#e4e9e5;--white:#fff;--gold:#b78a52}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;background:#f7f8f6;color:var(--ink);line-height:1.7}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{font-weight:800;color:var(--green);font-size:20px;letter-spacing:.04em}.brand small{display:block;font-size:10px;letter-spacing:.16em;color:var(--muted);font-weight:500}
+nav{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#52625a}nav a:hover{color:var(--gold)}
+.hero{background:linear-gradient(115deg,#244b42,#52796b);color:white;padding:66px 0 58px;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:330px;height:330px;border:1px solid #ffffff30;border-radius:50%;right:5%;top:-130px;box-shadow:0 0 0 38px #ffffff0c,0 0 0 78px #ffffff0a}
+.hero-inner{position:relative;z-index:1;max-width:720px}.eyebrow{font-size:12px;letter-spacing:.2em;color:#d8e7df}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.25;margin:12px 0 14px}.hero p{color:#e4eee8;margin:0 0 25px}.btn{display:inline-block;background:#fff;color:var(--green);padding:10px 20px;border-radius:999px;font-weight:700;font-size:14px}
+section{padding:48px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:20px}.section-head h2{font-size:25px;margin:0;color:var(--green)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.tag{display:inline-block;background:var(--green2);color:var(--green);font-size:11px;padding:3px 10px;border-radius:99px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 5px 18px #26332e08}.card h3{font-size:17px;margin:10px 0 6px}.card p{color:var(--muted);font-size:13px;margin:0}.date{font-size:12px;color:var(--gold);font-weight:700}
+.notice-list{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden}.notice{display:flex;gap:18px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}.notice:last-child{border:0}.notice time{font-size:12px;color:var(--muted);min-width:88px}.notice strong{font-size:14px;font-weight:600}.notice .tag{margin-left:auto;white-space:nowrap}
+.feature{background:var(--cream)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature-card{background:white;border-radius:16px;padding:22px;border:1px solid #eee9df}.feature-icon{font-size:26px}.feature-card h3{margin:8px 0 4px;font-size:17px}.feature-card p{font-size:13px;color:var(--muted);margin:0}
+.callout{background:#eaf1ed;border-radius:18px;padding:26px;display:flex;justify-content:space-between;align-items:center;gap:20px}.callout h2{margin:0;color:var(--green);font-size:22px}.callout p{margin:5px 0 0;color:var(--muted);font-size:13px}.callout a{background:var(--green);color:white;border-radius:99px;padding:10px 18px;font-size:13px;white-space:nowrap}
+footer{background:#243d35;color:#dce7e1;padding:28px 0;font-size:12px}footer p{margin:4px 0;color:#b8c9c0}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px 18px}.hero{padding:48px 0}.grid,.feature-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.notice{align-items:flex-start;flex-wrap:wrap;gap:6px 12px}.notice .tag{margin-left:0}.callout{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#top">員工活動資訊站<small>EMPLOYEE LIFE & ACTIVITY</small></a>
+  <nav aria-label="主要導覽"><a href="#news">最新公告</a><a href="#events">近期活動</a><a href="#welfare">員工福利</a><a href="#gallery">活動花絮</a></nav>
+</div></header>
+<main id="top">
+  <div class="hero"><div class="wrap hero-inner">
+    <div class="eyebrow">A BETTER WORKING LIFE</div>
+    <h1>讓工作生活，<br>多一點精彩！</h1>
+    <p>公司公告、員工活動與福利資訊，一站掌握。一起參與、一起創造美好回憶。</p>
+    <a class="btn" href="#events">看看近期活動　↓</a>
+  </div></div>
+  <section id="news"><div class="wrap">
+    <div class="section-head"><div><h2>最新公告</h2><p>重要消息與活動通知，隨時更新</p></div><span class="tag">NEWS</span></div>
+    <div class="notice-list">
+      <div class="notice"><time>公告日期待更新</time><strong>歡迎來到員工活動資訊站！最新消息將於此公告。</strong><span class="tag">網站消息</span></div>
+      <div class="notice"><time>日期待更新</time><strong>公司活動及報名資訊，請留意各活動說明。</strong><span class="tag">活動通知</span></div>
+      <div class="notice"><time>日期待更新</time><strong>員工福利辦法及申請方式，請至員工福利專區查詢。</strong><span class="tag">福利資訊</span></div>
+    </div>
+  </div></section>
+  <section id="events"><div class="wrap">
+    <div class="section-head"><div><h2>近期活動</h2><p>一起參加，讓日常多一點樂趣</p></div><span class="tag">UPCOMING</span></div>
+    <div class="grid">
+      <article class="card"><span class="date">活動日期待公布</span><h3>🎉 節慶主題活動</h3><p>節日限定企劃、趣味互動與同仁交流，活動辦法及參加方式將另行公告。</p></article>
+      <article class="card"><span class="date">活動日期待公布</span><h3>🏃 健康活力活動</h3><p>鼓勵日常運動與健康生活，邀請同仁一起培養好習慣。</p></article>
+      <article class="card"><span class="date">活動日期待公布</span><h3>🤝 跨部門交流</h3><p>透過輕鬆有趣的活動認識不同部門夥伴，累積合作好默契。</p></article>
+    </div>
+  </div></section>
+  <section class="feature" id="welfare"><div class="wrap">
+    <div class="section-head"><div><h2>員工福利</h2><p>常用福利資訊與申請指引</p></div><span class="tag">BENEFITS</span></div>
+    <div class="feature-grid">
+      <article class="feature-card"><div class="feature-icon">🎁</div><h3>福利補助</h3><p>各項補助內容、申請資格及辦理方式。</p></article>
+      <article class="feature-card"><div class="feature-icon">🌿</div><h3>休閒與旅遊</h3><p>員工旅遊、休閒活動及相關福利資訊。</p></article>
+      <article class="feature-card"><div class="feature-icon">📚</div><h3>生活好康</h3><p>合作優惠、閱讀資源及其他員工福利。</p></article>
+    </div>
+  </div></section>
+  <section id="gallery"><div class="wrap">
+    <div class="callout"><div><h2>活動花絮與精彩回顧</h2><p>記錄每一次相聚，分享同仁共同創造的美好時刻。</p></div><a href="mailto:">照片專區（待設定）</a></div>
+  </div></section>
+</main>
+<footer><div class="wrap"><strong>員工活動資訊站</strong><p>本網站為公司內部資訊展示範本，正式使用前請確認網站存取權限及公告內容。</p><p>© 公司內部使用｜聯絡窗口：請填入承辦單位</p></div></footer>
+</body>
+</html>
